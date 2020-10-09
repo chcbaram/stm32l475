@@ -19,6 +19,7 @@ extern "C" {
 #include "led.h"
 #include "uart.h"
 #include "cmdif.h"
+#include "flash.h"
 
 
 void hwInit(void);
