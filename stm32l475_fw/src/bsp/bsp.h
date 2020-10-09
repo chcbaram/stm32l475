@@ -20,6 +20,11 @@ extern "C" {
 #include "stm32l4xx_hal.h"
 
 
+#define logPrintf(...)    printf(__VA_ARGS__)
+
+
+
+
 void bspInit(void);
 
 

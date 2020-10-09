@@ -20,6 +20,7 @@ extern "C" {
 #include "uart.h"
 #include "cmdif.h"
 #include "flash.h"
+#include "qspi.h"
 
 
 void hwInit(void);

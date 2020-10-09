@@ -39,8 +39,12 @@ uint32_t millis(void)
   return HAL_GetTick();
 }
 
-
-
+extern int32_t uartWrite(uint8_t channel, uint8_t *p_data, uint32_t length);
+int __io_putchar(int ch)
+{
+  uartWrite(_DEF_UART1, (uint8_t *)&ch, 1);
+  return 1;
+}
 
 
 void SystemClock_Config(void)

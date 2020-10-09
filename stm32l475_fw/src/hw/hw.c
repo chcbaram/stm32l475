@@ -24,6 +24,9 @@ void hwInit(void)
   uartInit();
   uartOpen(_DEF_UART1, 57600);
 
+  logPrintf("\n\n[ Firmware Begin... ]\r\n");
+
   flashInit();
+  qspiInit();
 }
 
